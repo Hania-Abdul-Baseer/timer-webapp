@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Timer</title>
 </head>
 <body>
-    <div id="timer"></div> 
+    <div id="timer-input">
+            Hours:<input type="number" id="hours-input" name="hours-input" min="0" max="99" placeholder="">
+            Minutes:<input type="number" id="minutes-input" name="minutes-input" min="0" max="59" placeholder="">
+            Seconds:<input type="number" id="seconds-input" name="seconds-input" min="0" max="59" placeholder="">
+
+            <input type="submit" onclick="updateTimer()" value="Start Timer">
+    </div>
+
+    <div id="timer"></div>
+    <div id="buttons">
+        <button type="button" onclick="stopTimer()" id="pause-button">Stop</button>
+        <button type="button" onclick="resetTimer()"id="reset-button">Reset</button>
+    </div>
+    
 </body>
 </html>

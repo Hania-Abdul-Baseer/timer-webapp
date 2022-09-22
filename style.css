@@ -5,22 +5,34 @@
 body {
     padding: 0;
     margin: 0;
+    margin-top: 15%;
     background: linear-gradient(to right, #9A33FF, #FF33FE);
 }
 
+#timer-input {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
 
 #timer {
     background-color: #ffffff;
     color: rgb(147, 21, 201);
     text-align: center;
-    margin: 25% auto 0 auto;
-    padding: 0.5rem;
+    margin: 0 auto;
+    padding: 2.5rem;
     height: 80px;
     width: 400px;
     font-size: 60px;
     border: 2px solid;
     border-color: black;
     border-radius: 30%;
+}
+
+#buttons {
+    text-align: center;
+    margin: 0;
+    padding: 2.5rem;
 }
 
 
